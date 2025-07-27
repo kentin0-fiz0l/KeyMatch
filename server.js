@@ -115,7 +115,41 @@ app.post('/webhooks/:source', (req, res) => {
     res.json({ received: true });
 });
 
-// Catch-all route for single page app
+// Landing page routes
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'landing-pages/home-seller/index.html'));
+});
+
+app.get('/fsbo', (req, res) => {
+    res.sendFile(path.join(__dirname, 'landing-pages/fsbo/index.html'));
+});
+
+app.get('/expired', (req, res) => {
+    res.sendFile(path.join(__dirname, 'landing-pages/expired-listings/index.html'));
+});
+
+app.get('/investor', (req, res) => {
+    res.sendFile(path.join(__dirname, 'landing-pages/investor/index.html'));
+});
+
+// Thank you pages
+app.get('/thank-you', (req, res) => {
+    res.sendFile(path.join(__dirname, 'landing-pages/home-seller/thank-you.html'));
+});
+
+app.get('/thank-you-fsbo', (req, res) => {
+    res.sendFile(path.join(__dirname, 'landing-pages/fsbo/thank-you-fsbo.html'));
+});
+
+app.get('/thank-you-expired', (req, res) => {
+    res.sendFile(path.join(__dirname, 'landing-pages/expired-listings/thank-you-expired.html'));
+});
+
+app.get('/thank-you-investor', (req, res) => {
+    res.sendFile(path.join(__dirname, 'landing-pages/investor/thank-you-investor.html'));
+});
+
+// Catch-all route
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'landing-pages/home-seller/index.html'));
 });

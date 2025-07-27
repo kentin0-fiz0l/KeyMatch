@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Off-Market Investment Properties | KeyMatch Investor Network</title>
+    <meta name="description" content="Access exclusive off-market deals before they hit the MLS. Connect with motivated sellers and wholesale opportunities.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-green-600">🗝️ KeyMatch <span class="text-sm font-normal">Investor Network</span></h1>
+                <a href="tel:1-800-KEYMATCH" class="text-gray-600 hover:text-green-600">
+                    📞 1-800-KEYMATCH
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-green-600 to-green-800 text-white py-20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Off-Market Deals Before the MLS
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Access motivated sellers, distressed properties, and wholesale opportunities 
+                that never make it to the public market.
+            </p>
+            
+            <!-- Value Props -->
+            <div class="grid md:grid-cols-3 gap-4 mb-8">
+                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                    <p class="font-semibold">Pre-Market Access</p>
+                    <p class="text-sm opacity-90">See deals 7-14 days before MLS</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                    <p class="font-semibold">Motivated Sellers</p>
+                    <p class="text-sm opacity-90">Divorce, relocation, financial distress</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                    <p class="font-semibold">Wholesale Network</p>
+                    <p class="text-sm opacity-90">Direct from wholesalers nationwide</p>
+                </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur rounded-lg p-6 max-w-md mx-auto">
+                <p class="text-2xl font-semibold mb-4">Join the Network</p>
+                <form id="lead-form" class="space-y-4">
+                    <input type="text" name="investor_name" placeholder="Your Name" required
+                           class="w-full px-4 py-3 rounded text-gray-800 placeholder-gray-500">
+                    <input type="email" name="email" placeholder="Email Address" required
+                           class="w-full px-4 py-3 rounded text-gray-800 placeholder-gray-500">
+                    <input type="tel" name="phone" placeholder="Phone Number" required
+                           class="w-full px-4 py-3 rounded text-gray-800 placeholder-gray-500">
+                    
+                    <select name="investor_type" required class="w-full px-4 py-3 rounded text-gray-800">
+                        <option value="">What type of investor are you?</option>
+                        <option value="fix-and-flip">Fix & Flip</option>
+                        <option value="buy-and-hold">Buy & Hold Rental</option>
+                        <option value="wholesale">Wholesaler</option>
+                        <option value="landlord">Landlord</option>
+                        <option value="cash-buyer">Cash Buyer</option>
+                        <option value="new-investor">New to Investing</option>
+                    </select>
+                    
+                    <select name="budget_range" required class="w-full px-4 py-3 rounded text-gray-800">
+                        <option value="">What's your buy range?</option>
+                        <option value="under-100k">Under $100k</option>
+                        <option value="100k-250k">$100k - $250k</option>
+                        <option value="250k-500k">$250k - $500k</option>
+                        <option value="500k-1m">$500k - $1M</option>
+                        <option value="over-1m">$1M+</option>
+                    </select>
+                    
+                    <input type="text" name="target_markets" placeholder="Target Markets (e.g., Atlanta, Phoenix)" required
+                           class="w-full px-4 py-3 rounded text-gray-800 placeholder-gray-500">
+                    
+                    <button type="submit" 
+                            class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded transition duration-200">
+                        Get Off-Market Deals →
+                    </button>
+                </form>
+                <p class="text-xs mt-3 opacity-75">Free access. Deal alerts within 24 hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deal Types -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12">Types of Deals You'll See</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-xl">🏚️</span>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Distressed Properties</h4>
+                    <p class="text-gray-600 text-sm">Motivated sellers needing quick sales. Properties requiring renovation with high profit potential.</p>
+                    <p class="text-green-600 font-semibold text-sm mt-2">15-25% Below Market</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-xl">⚡</span>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Wholesale Deals</h4>
+                    <p class="text-gray-600 text-sm">Pre-negotiated properties from our wholesale network. Ready for immediate purchase.</p>
+                    <p class="text-green-600 font-semibold text-sm mt-2">10-20% Below Market</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-xl">💔</span>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Life Event Sales</h4>
+                    <p class="text-gray-600 text-sm">Divorce, job relocation, inheritance. Sellers who need to close quickly.</p>
+                    <p class="text-green-600 font-semibold text-sm mt-2">5-15% Below Market</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-xl">🏠</span>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Off-Market Rentals</h4>
+                    <p class="text-gray-600 text-sm">Turnkey rental properties with existing tenants. Immediate cash flow opportunities.</p>
+                    <p class="text-green-600 font-semibold text-sm mt-2">8-12% Cap Rates</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-xl">📦</span>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Bulk Packages</h4>
+                    <p class="text-gray-600 text-sm">Multiple properties from institutional sellers. Perfect for portfolio building.</p>
+                    <p class="text-green-600 font-semibold text-sm mt-2">Volume Discounts</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-xl">🏗️</span>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">New Construction</h4>
+                    <p class="text-gray-600 text-sm">Pre-market access to new developments. Lock in pricing before public launch.</p>
+                    <p class="text-green-600 font-semibold text-sm mt-2">Early Bird Pricing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12">How the Network Works</h3>
+            <div class="space-y-8">
+                <div class="flex items-start space-x-4">
+                    <div class="bg-green-600 text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 text-lg font-bold">
+                        1
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Tell Us Your Criteria</h4>
+                        <p class="text-gray-600">Share your target markets, property types, budget range, and investment strategy. The more specific, the better deals we can find.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                    <div class="bg-green-600 text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 text-lg font-bold">
+                        2
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Get Instant Deal Alerts</h4>
+                        <p class="text-gray-600">Receive text/email alerts when properties matching your criteria become available. See deals within minutes of our partners getting them.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                    <div class="bg-green-600 text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 text-lg font-bold">
+                        3
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Connect Direct with Sellers</h4>
+                        <p class="text-gray-600">We facilitate direct introductions. No middleman markups. You negotiate directly with motivated sellers or our wholesale partners.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                    <div class="bg-green-600 text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 text-lg font-bold">
+                        4
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Close Fast</h4>
+                        <p class="text-gray-600">Our partner agents handle paperwork and closings. Focus on analyzing deals while we handle the transaction logistics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12">Investor Success Stories</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-600 text-white px-3 py-1 rounded-full text-sm mr-3">DEAL ALERT</div>
+                        <span class="text-gray-600">Received: Monday 9 AM</span>
+                    </div>
+                    <h4 class="font-semibold mb-2">4-Unit Multi-Family - Phoenix</h4>
+                    <div class="space-y-1 text-sm mb-4">
+                        <p>• Purchase Price: $485,000</p>
+                        <p>• ARV: $580,000</p>
+                        <p>• Monthly Rent: $4,200</p>
+                        <p>• Cap Rate: 10.4%</p>
+                    </div>
+                    <div class="bg-white border rounded p-3">
+                        <p class="text-green-700 font-semibold">Closed: Friday (4 days later)</p>
+                        <p class="text-sm text-gray-600">"Fastest deal I've ever closed. Seller was relocating for work and needed out ASAP." - Marcus R.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-600 text-white px-3 py-1 rounded-full text-sm mr-3">WHOLESALE</div>
+                        <span class="text-gray-600">Bulk Portfolio</span>
+                    </div>
+                    <h4 class="font-semibold mb-2">12-Property Package - Atlanta</h4>
+                    <div class="space-y-1 text-sm mb-4">
+                        <p>• Total Investment: $1.8M</p>
+                        <p>• Portfolio ARV: $2.4M</p>
+                        <p>• Projected Profit: $600k</p>
+                        <p>• Timeline: 18 months</p>
+                    </div>
+                    <div class="bg-white border rounded p-3">
+                        <p class="text-green-700 font-semibold">ROI: 33% Annualized</p>
+                        <p class="text-sm text-gray-600">"Never would have found this package on the MLS. Game changer for scaling my business." - Sarah T.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-green-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-4">Ready to Access Off-Market Deals?</h3>
+            <p class="text-xl mb-8">
+                Join 2,500+ investors who get first access to motivated seller leads and wholesale opportunities.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                    <p class="text-2xl font-bold mb-2">847</p>
+                    <p>Deals closed last month</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                    <p class="text-2xl font-bold mb-2">$47M</p>
+                    <p>Total transaction volume</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                    <p class="text-2xl font-bold mb-2">14%</p>
+                    <p>Average below-market discount</p>
+                </div>
+            </div>
+            <button onclick="document.getElementById('lead-form').scrollIntoView({behavior: 'smooth'})" 
+                    class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-4 px-8 rounded-lg text-lg transition duration-200">
+                Start Getting Deals Today →
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2024 KeyMatch Investor Network. All rights reserved.</p>
+            <p class="mt-2 text-sm">Your gateway to off-market investment opportunities.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('lead-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = {
+                investor_name: formData.get('investor_name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                investor_type: formData.get('investor_type'),
+                budget_range: formData.get('budget_range'),
+                target_markets: formData.get('target_markets'),
+                source: 'investor-network',
+                leadType: 'Investor',
+                timestamp: new Date().toISOString(),
+                url: window.location.href
+            };
+            
+            const submitButton = e.target.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Adding you to network...';
+            submitButton.disabled = true;
+            
+            try {
+                const response = await fetch('/api/leads', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                
+                if (response.ok) {
+                    window.location.href = '/thank-you-investor?email=' + encodeURIComponent(data.email);
+                } else {
+                    throw new Error('Submission failed');
+                }
+            } catch (error) {
+                alert('Sorry, there was an error. Please try again or call us directly.');
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }
+        });
+
+        // Phone formatting
+        document.querySelector('input[name="phone"]').addEventListener('input', (e) => {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length >= 6) {
+                value = value.slice(0, 3) + '-' + value.slice(3, 6) + '-' + value.slice(6, 10);
+            } else if (value.length >= 3) {
+                value = value.slice(0, 3) + '-' + value.slice(3);
+            }
+            e.target.value = value;
+        });
+    </script>
+</body>
+</html>
