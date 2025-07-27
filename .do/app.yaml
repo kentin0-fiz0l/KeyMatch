@@ -1,0 +1,31 @@
+spec:
+  name: keymatch
+  region: sfo
+  features:
+  - buildpack-stack=ubuntu-22
+  services:
+  - name: web
+    environment_slug: node-js
+    github:
+      repo: kentin0-fiz0l/KeyMatch
+      branch: main
+      deploy_on_push: true
+    build_command: npm install
+    run_command: npm start
+    http_port: 3000
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    routes:
+    - path: /
+    envs:
+    - key: NODE_ENV
+      value: production
+    - key: ZAPIER_WEBHOOK_URL
+      value: ${ZAPIER_WEBHOOK_URL}
+      type: SECRET
+    - key: SENDGRID_API_KEY
+      value: ${SENDGRID_API_KEY}
+      type: SECRET
+    - key: AIRTABLE_API_KEY
+      value: ${AIRTABLE_API_KEY}
+      type: SECRET

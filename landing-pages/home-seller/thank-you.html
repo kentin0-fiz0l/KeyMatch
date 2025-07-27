@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - KeyMatch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google conversion tracking -->
+    <script>
+        gtag('event', 'conversion', {
+            'send_to': 'YOUR_CONVERSION_ID',
+            'value': 1.0,
+            'currency': 'USD'
+        });
+    </script>
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen flex items-center justify-center px-4">
+        <div class="max-w-md w-full bg-white rounded-lg shadow-lg p-8 text-center">
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-4xl">✓</span>
+            </div>
+            
+            <h1 class="text-3xl font-bold mb-4">Thank You!</h1>
+            
+            <p class="text-gray-600 mb-6">
+                We've received your information and are analyzing your property. 
+                You'll receive your free home value report within the next 15 minutes.
+            </p>
+            
+            <div class="bg-blue-50 rounded-lg p-4 mb-6">
+                <p class="font-semibold mb-2">What happens next?</p>
+                <ol class="text-left text-sm space-y-2">
+                    <li>✓ We'll analyze recent sales in your area</li>
+                    <li>✓ Match you with qualified cash buyers</li>
+                    <li>✓ Send your personalized home value report</li>
+                    <li>✓ A local expert will call to discuss your options</li>
+                </ol>
+            </div>
+            
+            <p class="text-sm text-gray-500 mb-6">
+                Check your email for your report. If you don't see it, check your spam folder.
+            </p>
+            
+            <div class="space-y-3">
+                <a href="/" class="block w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">
+                    Back to Homepage
+                </a>
+                <a href="tel:1-800-KEYMATCH" class="block w-full border border-blue-600 text-blue-600 py-3 rounded hover:bg-blue-50 transition">
+                    Call Us Now: 1-800-KEYMATCH
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Parse email from URL for personalization
+        const urlParams = new URLSearchParams(window.location.search);
+        const email = urlParams.get('email');
+        if (email) {
+            // Could personalize the message further
+            console.log('Lead email:', email);
+        }
+    </script>
+</body>
+</html>
