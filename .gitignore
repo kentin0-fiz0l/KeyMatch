@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+venv/
+env/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# API Keys & Secrets
+config/secrets.json
+*.key
+*.pem
+
+# Database
+*.db
+*.sqlite
+data/leads/*.csv
+data/agents/*.csv
+
+# Logs
+logs/
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build files
+dist/
+build/
+*.pyc
+__pycache__/
+
+# Sensitive Data
+legal/signed-agreements/
+data/personal-info/
+analytics/financial-reports/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Backup files
+*.backup
+*.bak
+*~
